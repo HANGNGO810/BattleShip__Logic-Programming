@@ -1,0 +1,17 @@
+1. READ the ship grid text file into a two-dimensional array named "shipMap"
+2. CREATE a two-dimensional array named "targetingMap" for DISPLAYING target
+3. INITIALIZE targetingMap with blank cells and indicate the index of row and column
+4. SET the count for Missiles and hits
+5. DISPLAY initial targetingMap
+6. REPEAT until missiles count is zero OR hits count is equal or greater than 17
+    6.1 PROMPT user for the input targeting value and TRY CATCH invalid value
+    6.2 GET the index of Row and Column from user input value
+    6.3 LOOP into the shipMap to check IF user makes a hit or a miss:
+        6.3.1 IF value of shipMap at the Index of row and column is equal to 1 THEN update targetingMap with a hit value "X" AND increase hit count
+        6.3.2 IF value of shipMap at the Index of row and column is equal to 0 THEN update targetingMap with a miss value "0"
+    6.4 DECREASE missiles count
+    6.5 DISPLAY the targetingMap and current missiles count
+7. IF the hit counts is equal or greater than 17 THEN DISPLAY message "You Win!" and display the shipMap
+8. IF the missile count is 0 and hit count is less than 17 THEN DISPLAY message "You lose!"
+9. End program.
+
